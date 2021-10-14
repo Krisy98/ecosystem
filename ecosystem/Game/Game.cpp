@@ -28,8 +28,29 @@ void Game::RenderDebugMenu(sf::RenderTarget& target){
 
 void Game::HandleEvent(sf::Event event){
     m_context->handleEvent(event);
+
+    std::string currentContext = m_context->getContext();
+
+    if (currentContext != m_context_str) {
+
+        if (currentContext == "start")
+        {
+            delete m_context;
+            start();
+        }
+
+        
+    }
+
+    
 }
 
 void Game::menu() {
     m_context = new Menu(m_title, getWindowSize());
+    m_context_str = "menu";
+}
+
+void Game::start() {
+    m_context = new Play(getWindowSize());
+    m_context_str = "start";
 }

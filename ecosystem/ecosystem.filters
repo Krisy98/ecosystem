@@ -44,6 +44,12 @@
     <ClCompile Include="Engine\Graphics\Text.cpp">
       <Filter>Engine\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Graphics\Arrow.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Grid.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -81,6 +87,12 @@
       <Filter>Engine\Context</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Graphics\Text.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Arrow.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Grid.h">
       <Filter>Engine\Graphics</Filter>
     </ClInclude>
   </ItemGroup>

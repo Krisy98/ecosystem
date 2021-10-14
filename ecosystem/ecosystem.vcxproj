@@ -211,6 +211,8 @@ xcopy /y /d  "$(SolutionDir)external\SFML-2.5.1\bin\*.dll" "$(OutDir)"</Command>
     <ClCompile Include="Engine\Context\Context.cpp" />
     <ClCompile Include="Engine\FileReader\File.cpp" />
     <ClCompile Include="Engine\GameBase.cpp" />
+    <ClCompile Include="Engine\Graphics\Arrow.cpp" />
+    <ClCompile Include="Engine\Graphics\Grid.cpp" />
     <ClCompile Include="Engine\Graphics\Text.cpp" />
     <ClCompile Include="Engine\Physics\Collision.cpp" />
     <ClCompile Include="Game\Context\Menu.cpp" />
@@ -225,6 +227,8 @@ xcopy /y /d  "$(SolutionDir)external\SFML-2.5.1\bin\*.dll" "$(OutDir)"</Command>
     <ClInclude Include="Engine\Context\Context.h" />
     <ClInclude Include="Engine\FileReader\File.h" />
     <ClInclude Include="Engine\GameBase.h" />
+    <ClInclude Include="Engine\Graphics\Arrow.h" />
+    <ClInclude Include="Engine\Graphics\Grid.h" />
     <ClInclude Include="Engine\Graphics\Text.h" />
     <ClInclude Include="Engine\Physics\Collision.h" />
     <ClInclude Include="Game\Context\Menu.h" />
@@ -235,10 +239,6 @@ xcopy /y /d  "$(SolutionDir)external\SFML-2.5.1\bin\*.dll" "$(OutDir)"</Command>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ecosystem.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Resources\Levels\lvl_0.txt" />
-    <Text Include="Resources\Levels\lvl_example.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

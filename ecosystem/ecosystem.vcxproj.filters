@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Engine\Context\Context.cpp">
+      <Filter>Engine\Context</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\FileReader\File.cpp">
+      <Filter>Engine\FileReader</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Arrow.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Grid.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Physics\Collision.cpp">
+      <Filter>Engine\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameBase.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui-master\imgui.cpp">
+      <Filter>Engine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui-master\imgui_demo.cpp">
+      <Filter>Engine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui-master\imgui_draw.cpp">
+      <Filter>Engine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui-master\imgui_tables.cpp">
+      <Filter>Engine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui-sfml-master\imgui-SFML.cpp">
+      <Filter>Engine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\imgui-master\imgui_widgets.cpp">
+      <Filter>Engine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Context\Menu.cpp">
+      <Filter>Gameplay\Context</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Context\Play.cpp">
+      <Filter>Gameplay\Context</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Text.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Context\Context.h">
+      <Filter>Engine\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FileReader\File.h">
+      <Filter>Engine\FileReader</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Arrow.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Grid.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Physics\Collision.h">
+      <Filter>Engine\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameBase.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Game.h">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\imgui-master\imgui.h">
+      <Filter>Engine\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\imgui-master\imgui_internal.h">
+      <Filter>Engine\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\imgui-sfml-master\imgui-SFML.h">
+      <Filter>Engine\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Context\Menu.h">
+      <Filter>Gameplay\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Context\Play.h">
+      <Filter>Gameplay\Context</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Text.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ecosystem.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{46557e4a-91ba-4c4a-819d-d984ecbc6b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Context">
+      <UniqueIdentifier>{3571aa2f-77c3-4fa0-b403-c13d875de66f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\FileReader">
+      <UniqueIdentifier>{a2df63e9-357d-4198-9593-524aafa6d501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics">
+      <UniqueIdentifier>{ce4e3b0f-be03-4fd6-b1a2-1d26aa7b634a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Physics">
+      <UniqueIdentifier>{077ef3d0-aedb-4edb-bec4-2b53fc1f5cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay">
+      <UniqueIdentifier>{0e27b864-c9e0-4c5a-814b-db4e44565b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ImGui">
+      <UniqueIdentifier>{0b12c5d5-5943-46a6-b225-be71c2403a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\Context">
+      <UniqueIdentifier>{32b54741-7f20-40d0-a429-529abcef7bf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{91ebf34b-016b-4cae-9406-76747142ae42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

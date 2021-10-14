@@ -1,22 +1,21 @@
 #pragma once
 
 #include "../../Engine/Context/Context.h"
-#include "../../Engine/Graphics/Text.h"
+#include "../../Engine/Graphics/Grid.h"
 
-class Menu : public Context {
+class Play : public Context {
 
-public:
-
-	Menu(const char* gameTitle, sf::Vector2f windowSize);
-	~Menu();
+public :
+	Play(sf::Vector2f windowSize);
+	~Play();
 
 	void update(float deltaTime) override;
 	void render(sf::RenderTarget& target) override;
 	void renderDebugMenu(sf::RenderTarget& target) override;
 	void handleEvent(sf::Event event) override;
 
+	const char* getContext() override;
+	
 private:
-	const char* gameTitle = {};
-	Text* m_text = {};
+	Grid* m_grid;
 };
-

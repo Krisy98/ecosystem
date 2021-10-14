@@ -28,6 +28,10 @@ sf::Text Text::getText() {
 	return m_text;
 }
 
+void Text::setColor(sf::Color color) {
+	m_text.setFillColor(color);
+}
+
 bool Text::isOperational() {
 	return m_operational;
 }
@@ -36,7 +40,6 @@ void Text::init() {
 
 	if (m_font.loadFromFile("Assets\\arial.ttf"))
 	{
-		std::cout << "font load successed ! " << std::endl;
 		m_operational = true;
 	}
 
@@ -47,7 +50,7 @@ void Text::init() {
 	m_text.setPosition(m_position);
 	
 	m_position.x -= m_text.getGlobalBounds().width / 2;
-	m_position.y += m_text.getGlobalBounds().height / 2;
+	m_position.y -= m_text.getGlobalBounds().height / 2;
 
 	m_text.setPosition(m_position);
 }

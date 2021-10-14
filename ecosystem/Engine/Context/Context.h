@@ -11,5 +11,7 @@ public :
     virtual void renderDebugMenu(sf::RenderTarget& target) = 0;
     virtual void handleEvent(sf::Event event) = 0;
 
+    virtual const char* getContext() = 0;
+
 };
 

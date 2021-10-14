@@ -11,6 +11,9 @@ public:
 	~Text();
 
 	sf::Text getText();
+
+	void setColor(sf::Color color);
+
 	bool isOperational();
 
 private :

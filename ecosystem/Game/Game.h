@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 #include <Engine/GameBase.h>
 #include "../Engine/Context/Context.h"
 
@@ -15,10 +17,13 @@ public:
 
 private:
     Context* m_context = {};
+    const char* m_context_str;
     const char* m_title;
 
     /// <summary>
     /// set the context as menu
     /// </summary>
     void menu();
+
+    void start();
 };
