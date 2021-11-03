@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include <Engine/GameBase.h>
+#include <iostream>
 
 static constexpr float APP_MAX_FRAMERATE{ 60.0f };
 
@@ -45,7 +46,9 @@ void GameBase::RunGameLoop(){
             }
             HandleEvent(event);
         }
-      
+
+        sf::sleep(sf::milliseconds(50));
+
         Update(deltaTime);
         Render(m_window); 
         RenderDebugMenu(m_window);

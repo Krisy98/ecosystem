@@ -7,14 +7,14 @@
 
 Menu::Menu(const char* gameTitle, sf::Vector2f windowSize){
 	m_context = "menu";
-	const char* strings[2] = {"start", "synopsis"};
+	const char* strings[1] = {"start"};
 	sf::Vector2f position(windowSize.x/2, windowSize.y/6);
 
 	m_gameTitle = new Text(gameTitle, sf::Color(255, 255, 255), position, 45);
 
 	position.y += windowSize.y / 6;
 
-	for (int i = 0; i < 2; i++) 
+	for (int i = 0; i < 1; i++) 
 	{
 		m_options[i] = new Text(strings[i], sf::Color(220, 220, 220), position);
 
@@ -34,7 +34,7 @@ void Menu::update(float deltaTime){
 void Menu::render(sf::RenderTarget& target) {
 	if (m_gameTitle->isOperational()) { target.draw(m_gameTitle->getText()); }
 
-	for (int i = 0; i < 2; i++) {
+	for (int i = 0; i < 1; i++) {
 		if (m_options[i]->isOperational()) target.draw(m_options[i]->getText());
 	}
 }

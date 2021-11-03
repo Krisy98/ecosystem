@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "../../Engine/Context/Context.h"
+#include "../../Engine/GameStructure/Context.h"
 #include "../../Engine/Graphics/Text.h"
 #include "../../Engine/Graphics/Arrow.h"
 
@@ -23,7 +23,7 @@ public:
 private:
 	Text* m_gameTitle = {};
 	Text* m_options[2];
-	int size = 2;
+	int size = 1;
 	std::string m_context;
 };
 

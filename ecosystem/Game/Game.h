@@ -3,7 +3,7 @@
 #include <iostream>
 
 #include <Engine/GameBase.h>
-#include "../Engine/Context/Context.h"
+#include "../Engine/GameStructure/Context.h"
 
 class Game : public GameBase{
 

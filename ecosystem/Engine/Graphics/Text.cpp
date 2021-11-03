@@ -38,7 +38,7 @@ bool Text::isOperational() {
 
 void Text::init() {
 
-	if (m_font.loadFromFile("Assets\\arial.ttf"))
+	if (m_font.loadFromFile("Assets\\font/arial.ttf"))
 	{
 		m_operational = true;
 	}

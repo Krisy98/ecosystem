@@ -208,15 +208,18 @@ xcopy /y /d  "$(SolutionDir)external\SFML-2.5.1\bin\*.dll" "$(OutDir)"</Command>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Engine\Context\Context.cpp" />
+    <ClCompile Include="Engine\Entity\Entity.cpp" />
     <ClCompile Include="Engine\FileReader\File.cpp" />
     <ClCompile Include="Engine\GameBase.cpp" />
+    <ClCompile Include="Engine\GameStructure\Context.cpp" />
+    <ClCompile Include="Engine\GameStructure\Grid.cpp" />
     <ClCompile Include="Engine\Graphics\Arrow.cpp" />
-    <ClCompile Include="Engine\Graphics\Grid.cpp" />
     <ClCompile Include="Engine\Graphics\Text.cpp" />
     <ClCompile Include="Engine\Physics\Collision.cpp" />
     <ClCompile Include="Game\Context\Menu.cpp" />
     <ClCompile Include="Game\Context\Play.cpp" />
+    <ClCompile Include="Game\Entity\Animal.cpp" />
+    <ClCompile Include="Game\Entity\Plant.cpp" />
     <ClCompile Include="Game\Game.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -224,15 +227,22 @@ xcopy /y /d  "$(SolutionDir)external\SFML-2.5.1\bin\*.dll" "$(OutDir)"</Command>
     <ClInclude Include="..\external\imgui-master\imgui.h" />
     <ClInclude Include="..\external\imgui-master\imgui_internal.h" />
     <ClInclude Include="..\external\imgui-sfml-master\imgui-SFML.h" />
-    <ClInclude Include="Engine\Context\Context.h" />
+    <ClInclude Include="Engine\Entity\Direction.h" />
+    <ClInclude Include="Engine\Entity\Entity.h" />
     <ClInclude Include="Engine\FileReader\File.h" />
     <ClInclude Include="Engine\GameBase.h" />
+    <ClInclude Include="Engine\GameStructure\Context.h" />
+    <ClInclude Include="Engine\GameStructure\Grid.h" />
     <ClInclude Include="Engine\Graphics\Arrow.h" />
-    <ClInclude Include="Engine\Graphics\Grid.h" />
     <ClInclude Include="Engine\Graphics\Text.h" />
     <ClInclude Include="Engine\Physics\Collision.h" />
     <ClInclude Include="Game\Context\Menu.h" />
     <ClInclude Include="Game\Context\Play.h" />
+    <ClInclude Include="Game\Entity\Animal.h" />
+    <ClInclude Include="Game\Entity\Diet.h" />
+    <ClInclude Include="Game\Entity\Gender.h" />
+    <ClInclude Include="Game\Entity\Plant.h" />
+    <ClInclude Include="Game\Entity\Species.h" />
     <ClInclude Include="Game\Game.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />

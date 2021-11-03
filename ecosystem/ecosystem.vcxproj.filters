@@ -2,16 +2,10 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Engine\Context\Context.cpp">
-      <Filter>Engine\Context</Filter>
-    </ClCompile>
     <ClCompile Include="Engine\FileReader\File.cpp">
       <Filter>Engine\FileReader</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Graphics\Arrow.cpp">
-      <Filter>Engine\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine\Graphics\Grid.cpp">
       <Filter>Engine\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Physics\Collision.cpp">
@@ -50,18 +44,27 @@
     <ClCompile Include="Engine\Graphics\Text.cpp">
       <Filter>Engine\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\Entity\Entity.cpp">
+      <Filter>Engine\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Entity\Animal.cpp">
+      <Filter>Gameplay\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameStructure\Context.cpp">
+      <Filter>Engine\GameStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameStructure\Grid.cpp">
+      <Filter>Engine\GameStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Entity\Plant.cpp">
+      <Filter>Gameplay\Entity</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Engine\Context\Context.h">
-      <Filter>Engine\Context</Filter>
-    </ClInclude>
     <ClInclude Include="Engine\FileReader\File.h">
       <Filter>Engine\FileReader</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Graphics\Arrow.h">
-      <Filter>Engine\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine\Graphics\Grid.h">
       <Filter>Engine\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Physics\Collision.h">
@@ -95,6 +98,33 @@
     <ClInclude Include="resource.h">
       <Filter>Resources</Filter>
     </ClInclude>
+    <ClInclude Include="Engine\Entity\Entity.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\Direction.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\Animal.h">
+      <Filter>Gameplay\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameStructure\Context.h">
+      <Filter>Engine\GameStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameStructure\Grid.h">
+      <Filter>Engine\GameStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\Diet.h">
+      <Filter>Gameplay\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\Species.h">
+      <Filter>Gameplay\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\Plant.h">
+      <Filter>Gameplay\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\Gender.h">
+      <Filter>Gameplay\Entity</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ecosystem.rc" />
@@ -102,9 +132,6 @@
   <ItemGroup>
     <Filter Include="Engine">
       <UniqueIdentifier>{46557e4a-91ba-4c4a-819d-d984ecbc6b75}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Engine\Context">
-      <UniqueIdentifier>{3571aa2f-77c3-4fa0-b403-c13d875de66f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Engine\FileReader">
       <UniqueIdentifier>{a2df63e9-357d-4198-9593-524aafa6d501}</UniqueIdentifier>
@@ -126,6 +153,15 @@
     </Filter>
     <Filter Include="Resources">
       <UniqueIdentifier>{91ebf34b-016b-4cae-9406-76747142ae42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Entity">
+      <UniqueIdentifier>{0cc93387-c905-4df8-9669-8f8999f4e539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\Entity">
+      <UniqueIdentifier>{ca842e25-633d-4248-b009-a7b7d81b9bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\GameStructure">
+      <UniqueIdentifier>{3571aa2f-77c3-4fa0-b403-c13d875de66f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

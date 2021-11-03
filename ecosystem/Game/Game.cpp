@@ -16,7 +16,7 @@ void Game::Update(float deltaTime){
 }
 
 void Game::Render(sf::RenderTarget& target){
-    target.clear(sf::Color(0, 0, 0));
+    target.clear();
 
     m_context->render(target);
 }
